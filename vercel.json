@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app/public/**/*.php",
+      "use": "vercel-php@0.6.0"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/app/public/$1"
+    }
+  ],
+  "env": {
+    "WP_HOME": "https://manki1.vercel.app",
+    "WP_SITEURL": "https://manki1.vercel.app"
+  }
+}
