@@ -1,0 +1,52 @@
+# Ignore everything in app/public except our theme
+app/public/*
+!app/public/wp-content/
+app/public/wp-content/*
+!app/public/wp-content/themes/
+app/public/wp-content/themes/*
+!app/public/wp-content/themes/Divi-Child-Theme/
+
+# WordPress config and uploads
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+wp-content/backups/
+wp-content/upgrade/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+
+# Local development
+.htaccess
+/sitemap.xml
+/sitemap.xml.gz
+conf/
+
+# Logs
+*.log
+error_log
+access_log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node modules
+node_modules/
+package-lock.json
+
+# Database
+*.sql
+*.sql.gz
+local-database.sql
+
+# Source files and photos
+*-source.md
+fotky-zelenefasady/
+redizajnmanki-main/

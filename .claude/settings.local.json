@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for:*)",
+      "Bash(do echo '=== $file ===')",
+      "Bash(unzip:*)",
+      "Bash(done)",
+      "Bash(php -l:*)",
+      "Bash(php -r:*)",
+      "Bash(wp post list:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)",
+      "Bash(timeout 30 bash -c 'while ps -p $(pgrep -f \"\"git add\"\") > /dev/null 2>&1; do sleep 1; done; echo \"\"Complete\"\"')"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
