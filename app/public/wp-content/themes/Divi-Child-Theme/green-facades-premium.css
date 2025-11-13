@@ -1232,3 +1232,142 @@
         font-size: 26px;
     }
 }
+
+/* ==========================================================================
+   Footer Styling - Green Theme Integration
+   ========================================================================== */
+
+/* Target Divi footer on this page */
+body.page-template-page-zelene-fasady #main-footer {
+    background-color: var(--premium-primary) !important;
+    padding: 60px 0 30px;
+}
+
+body.page-template-page-zelene-fasady #footer-bottom {
+    background-color: var(--premium-dark) !important;
+    border-top: 1px solid rgba(212, 232, 225, 0.1);
+}
+
+/* Footer widgets */
+body.page-template-page-zelene-fasady #main-footer .footer-widget {
+    margin-bottom: 40px;
+}
+
+body.page-template-page-zelene-fasady #main-footer .widget-title,
+body.page-template-page-zelene-fasady #main-footer h1,
+body.page-template-page-zelene-fasady #main-footer h2,
+body.page-template-page-zelene-fasady #main-footer h3,
+body.page-template-page-zelene-fasady #main-footer h4 {
+    color: var(--premium-white) !important;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Footer text */
+body.page-template-page-zelene-fasady #main-footer,
+body.page-template-page-zelene-fasady #main-footer p,
+body.page-template-page-zelene-fasady #main-footer li,
+body.page-template-page-zelene-fasady #footer-bottom,
+body.page-template-page-zelene-fasady #footer-bottom p {
+    color: var(--premium-light) !important;
+}
+
+/* Footer links */
+body.page-template-page-zelene-fasady #main-footer a,
+body.page-template-page-zelene-fasady #footer-bottom a {
+    color: var(--premium-light) !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+body.page-template-page-zelene-fasady #main-footer a:hover,
+body.page-template-page-zelene-fasady #footer-bottom a:hover {
+    color: var(--premium-gold) !important;
+}
+
+/* Footer menu */
+body.page-template-page-zelene-fasady #main-footer .menu li {
+    margin-bottom: 12px;
+}
+
+body.page-template-page-zelene-fasady #main-footer .menu a {
+    padding: 5px 0;
+    display: inline-block;
+}
+
+/* Social icons */
+body.page-template-page-zelene-fasady #main-footer .et-social-icon a {
+    color: var(--premium-white) !important;
+    background-color: var(--premium-secondary) !important;
+}
+
+body.page-template-page-zelene-fasady #main-footer .et-social-icon a:hover {
+    background-color: var(--premium-gold) !important;
+    transform: translateY(-3px);
+}
+
+/* Copyright/Bottom footer */
+body.page-template-page-zelene-fasady #footer-bottom {
+    padding: 20px 0;
+}
+
+body.page-template-page-zelene-fasady #footer-info,
+body.page-template-page-zelene-fasady #footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Input fields in footer */
+body.page-template-page-zelene-fasady #main-footer input[type="text"],
+body.page-template-page-zelene-fasady #main-footer input[type="email"],
+body.page-template-page-zelene-fasady #main-footer input[type="tel"],
+body.page-template-page-zelene-fasady #main-footer textarea {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(212, 232, 225, 0.2);
+    color: var(--premium-white);
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+
+body.page-template-page-zelene-fasady #main-footer input[type="text"]:focus,
+body.page-template-page-zelene-fasady #main-footer input[type="email"]:focus,
+body.page-template-page-zelene-fasady #main-footer input[type="tel"]:focus,
+body.page-template-page-zelene-fasady #main-footer textarea:focus {
+    border-color: var(--premium-gold);
+    outline: none;
+}
+
+/* Submit buttons in footer */
+body.page-template-page-zelene-fasady #main-footer input[type="submit"],
+body.page-template-page-zelene-fasady #main-footer button[type="submit"],
+body.page-template-page-zelene-fasady #main-footer .et_pb_button {
+    background-color: var(--premium-gold) !important;
+    color: var(--premium-dark) !important;
+    border: none !important;
+    padding: 12px 32px !important;
+    font-weight: 600 !important;
+    border-radius: 6px !important;
+    transition: all 0.3s ease !important;
+}
+
+body.page-template-page-zelene-fasady #main-footer input[type="submit"]:hover,
+body.page-template-page-zelene-fasady #main-footer button[type="submit"]:hover,
+body.page-template-page-zelene-fasady #main-footer .et_pb_button:hover {
+    background-color: var(--premium-white) !important;
+    color: var(--premium-primary) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(201, 169, 97, 0.3);
+}
+
+@media (max-width: 768px) {
+    body.page-template-page-zelene-fasady #main-footer {
+        padding: 40px 0 20px;
+    }
+
+    body.page-template-page-zelene-fasady #footer-info,
+    body.page-template-page-zelene-fasady #footer-bottom .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
