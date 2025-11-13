@@ -55,7 +55,7 @@ get_header();
                         <div class="tabs__panel-inner">
                             <div class="tabs__image">
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/zelene-fasady-hero.jpg"
-                                     alt="Zelené fasády" class="tabs__img">
+                                     alt="Zelené fasády" class="tabs__img" loading="lazy">
                             </div>
                             <div class="tabs__text">
                                 <h3 class="tabs__heading" id="co-su-zelene-fasady">Čo sú zelené fasády?</h3>
@@ -96,7 +96,7 @@ get_header();
                         <div class="tabs__panel-inner">
                             <div class="tabs__image">
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/system-modularne.jpg"
-                                     alt="Benefity zelených fasád" class="tabs__img">
+                                     alt="Benefity zelených fasád" class="tabs__img" loading="lazy">
                             </div>
                             <div class="tabs__text">
                                 <h3 class="tabs__heading" id="preco-im-dat-zelenu">Prečo im dať zelenú?</h3>
@@ -155,7 +155,7 @@ get_header();
             <!-- System 1: Popínavé systémy (Image Left) -->
             <div class="system-item system-item--left">
                 <div class="system-item__image">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/system-popinave.jpg" alt="Popínavé systémy">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/system-popinave.jpg" alt="Popínavé systémy" loading="lazy">
                 </div>
                 <div class="system-item__content">
                     <h3 class="system-item__name">Popínavé systémy</h3>
@@ -214,14 +214,14 @@ get_header();
                     </div>
                 </div>
                 <div class="system-item__image">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/system-modularne.jpg" alt="Modulárne systémy">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/system-modularne.jpg" alt="Modulárne systémy" loading="lazy">
                 </div>
             </div>
 
             <!-- System 3: Hydroponické systémy (Image Left) -->
             <div class="system-item system-item--left">
                 <div class="system-item__image">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/system-hydroponicke.jpg" alt="Hydroponické systémy">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/system-hydroponicke.jpg" alt="Hydroponické systémy" loading="lazy">
                 </div>
                 <div class="system-item__content">
                     <h3 class="system-item__name">Hydroponické systémy</h3>
@@ -279,7 +279,7 @@ get_header();
                     </div>
                 </div>
                 <div class="system-item__image">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/system-hybridne.jpg" alt="Hybridné riešenia">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/system-hybridne.jpg" alt="Hybridné riešenia" loading="lazy">
                 </div>
             </div>
         </div>
@@ -299,7 +299,7 @@ get_header();
             <!-- Ján Sabol -->
             <div class="manki-member">
                 <div class="manki-member__image">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/jan-sabol.jpg" alt="Ing. Ján Sabol">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/jan-sabol.jpg" alt="Ing. Ján Sabol" loading="lazy">
                 </div>
                 <div class="manki-member__content">
                     <h3 class="manki-member__name">Ing. Ján Sabol</h3>
@@ -336,7 +336,7 @@ get_header();
             <!-- Miroslav Hanečák -->
             <div class="manki-member">
                 <div class="manki-member__image">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/miroslav-hanecak.jpg" alt="Ing. Miroslav Hanečák">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/miroslav-hanecak.jpg" alt="Ing. Miroslav Hanečák" loading="lazy">
                 </div>
                 <div class="manki-member__content">
                     <h3 class="manki-member__name">Ing. Miroslav Hanečák</h3>
@@ -386,7 +386,7 @@ get_header();
             <!-- Daniel Ďugel -->
             <div class="expert-member">
                 <div class="expert-member__image">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/daniel-dugel.jpg" alt="Ing. Daniel Ďugel, PhD.">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/daniel-dugel.jpg" alt="Ing. Daniel Ďugel, PhD." loading="lazy">
                 </div>
                 <div class="expert-member__content">
                     <h3 class="expert-member__name">Ing. Daniel Ďugel, PhD.</h3>
@@ -423,7 +423,7 @@ get_header();
             <!-- Darina Funtíková -->
             <div class="expert-member">
                 <div class="expert-member__image">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/darina-funtikova.jpg" alt="Darina Funtíková">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/darina-funtikova.jpg" alt="Darina Funtíková" loading="lazy">
                 </div>
                 <div class="expert-member__content">
                     <h3 class="expert-member__name">Darina Funtíková</h3>
@@ -461,7 +461,7 @@ get_header();
             <!-- Michal Vavrík -->
             <div class="expert-member">
                 <div class="expert-member__image">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/michal-vavrik.jpg" alt="Ing. Michal Vavrík">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/michal-vavrik.jpg" alt="Ing. Michal Vavrík" loading="lazy">
                 </div>
                 <div class="expert-member__content">
                     <h3 class="expert-member__name">Ing. Michal Vavrík</h3>

@@ -15,7 +15,7 @@ add_shortcode('year', 'year_shortcode');
 // Enqueue premium styles for Green Facades page
 function enqueue_green_facades_premium_styles() {
     if (is_page_template('page-zelene-fasady.php')) {
-        wp_enqueue_style('green-facades-premium', get_stylesheet_directory_uri() . '/green-facades-premium.css', array(), '1.0.0');
+        wp_enqueue_style('green-facades-premium', get_stylesheet_directory_uri() . '/green-facades-premium.css', array('divi-style'), '1.0.2');
     }
 }
-add_action('wp_enqueue_scripts', 'enqueue_green_facades_premium_styles');
+add_action('wp_enqueue_scripts', 'enqueue_green_facades_premium_styles', 20);
