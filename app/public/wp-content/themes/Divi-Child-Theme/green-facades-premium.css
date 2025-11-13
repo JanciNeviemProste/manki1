@@ -551,30 +551,6 @@
 }
 
 /* ==========================================================================
-   Footer Override (Premium Green)
-   ========================================================================== */
-
-.page-template-page-zelene-fasady #main-footer {
-    background: linear-gradient(135deg, var(--premium-primary) 0%, var(--premium-dark) 100%) !important;
-    border-top: 3px solid var(--premium-gold);
-}
-
-.page-template-page-zelene-fasady #footer-bottom {
-    background-color: var(--premium-dark) !important;
-}
-
-.page-template-page-zelene-fasady .footer-widget,
-.page-template-page-zelene-fasady .footer-widget a,
-.page-template-page-zelene-fasady #footer-info,
-.page-template-page-zelene-fasady #footer-info a {
-    color: rgba(255, 255, 255, 0.9) !important;
-}
-
-.page-template-page-zelene-fasady .footer-widget h4 {
-    color: var(--premium-gold) !important;
-}
-
-/* ==========================================================================
    Responsive Design
    ========================================================================== */
 
@@ -1237,12 +1213,26 @@
    Footer Styling - Green Theme Integration
    ========================================================================== */
 
-/* Target Divi footer on this page */
+/* Target Divi footer on this page - Main footer container */
 body.page-template-page-zelene-fasady #main-footer {
-    background-color: var(--premium-primary) !important;
+    background: linear-gradient(135deg, var(--premium-primary) 0%, var(--premium-dark) 100%) !important;
     padding: 60px 0 30px;
+    border-top: 3px solid var(--premium-gold);
 }
 
+/* Footer widgets area */
+body.page-template-page-zelene-fasady #footer-widgets {
+    background-color: transparent !important;
+}
+
+/* Footer navigation area */
+body.page-template-page-zelene-fasady #et-footer-nav {
+    background-color: rgba(13, 59, 46, 0.5) !important;
+    border-top: 1px solid rgba(212, 232, 225, 0.1);
+    border-bottom: 1px solid rgba(212, 232, 225, 0.1);
+}
+
+/* Footer bottom area */
 body.page-template-page-zelene-fasady #footer-bottom {
     background-color: var(--premium-dark) !important;
     border-top: 1px solid rgba(212, 232, 225, 0.1);
