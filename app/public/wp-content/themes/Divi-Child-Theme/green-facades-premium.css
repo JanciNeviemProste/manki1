@@ -1214,17 +1214,25 @@
    ========================================================================== */
 
 /* Target Divi footer on this page - Main footer container */
+/* CRITICAL FIX: Added Theme Builder section selectors */
+.et_pb_section_0_tb_footer,
+.et_pb_section_1_tb_footer,
+.et_pb_section_2_tb_footer,
+.et_pb_section_3_tb_footer,
+.et-l--footer .et_pb_section,
+#et-main-area #main-footer,
 body.page-template-page-zelene-fasady #main-footer,
-body.page-template-page-zelene-fasady-php #main-footer,
-body[class*="zelene-fasady"] #main-footer,
 body.page-template-page-zelene-fasady-php #main-footer,
 body[class*="zelene-fasady"] #main-footer {
     background: linear-gradient(135deg, var(--premium-primary) 0%, var(--premium-dark) 100%) !important;
-    padding: 60px 0 30px;
-    border-top: 3px solid var(--premium-gold);
+    padding: 60px 0 30px !important;
+    border-top: 3px solid var(--premium-gold) !important;
 }
 
 /* Footer widgets area */
+.et_pb_row_0_tb_footer,
+.et_pb_row_1_tb_footer,
+.et_pb_row_2_tb_footer,
 body.page-template-page-zelene-fasady #footer-widgets,
 body.page-template-page-zelene-fasady-php #footer-widgets,
 body[class*="zelene-fasady"] #footer-widgets {
