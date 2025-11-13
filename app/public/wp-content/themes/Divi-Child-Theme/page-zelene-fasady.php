@@ -143,132 +143,393 @@ get_header();
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="team">
-        <div class="team__container">
-            <h2 class="team__title">Realizačný tím expertov</h2>
-            <p class="team__subtitle">
-                Náš multidisciplinárny tím špičkových odborníkov zaručuje komplexnú realizáciu
-                zelených fasád od návrhu až po dlhodobý servis.
+    <!-- Systems and Products Section -->
+    <section class="systems">
+        <div class="systems__container">
+            <h2 class="systems__title">Systémy a produkty</h2>
+            <p class="systems__subtitle">
+                Vyberáme riešenie podľa charakteru budovy, rozpočtu a požadovaného efektu.
+                Od jednoduchých popínavých systémov až po technologicky pokročilé hydroponické riešenia.
             </p>
 
-            <div class="team__grid">
-                <!-- Ján Sabol -->
-                <div class="team-card">
-                    <div class="team-card__image">
-                        <div class="team-card__placeholder"></div>
+            <div class="systems__grid">
+                <!-- System 1: Popínavé systémy -->
+                <div class="system-card">
+                    <div class="system-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4C13.5 4 5 12.5 5 23C5 33.5 13.5 42 24 42C34.5 42 43 33.5 43 23C43 12.5 34.5 4 24 4Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 12V36M16 20L24 28L32 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
                     </div>
-                    <h3 class="team-card__name">Ing. Ján Sabol</h3>
-                    <p class="team-card__role">CEO a zakladateľ MANKI</p>
-                    <p class="team-card__desc">
-                        Celkové projektové riadenie a koordinácia od návrhu po odovzdanie.
-                        6+ rokov skúseností s výškovými prácami a komplexnými projektami.
+                    <h3 class="system-card__name">Popínavé systémy</h3>
+                    <p class="system-card__subtitle">Green façades</p>
+                    <p class="system-card__desc">
+                        Najjednoduchší a najekonomickejší variant. Popínavé rastliny prirodzene obrastajú
+                        lanové alebo mrežové konštrukcie. Fasáda postupne zazelenie a rokmi zosilňuje svoj efekt.
                     </p>
-                    <div class="team-card__badges">
-                        <span class="team-card__badge">OOPP revízny technik</span>
-                        <span class="team-card__badge">Projektový manažment</span>
+                    <div class="system-card__details">
+                        <div class="system-card__detail">
+                            <strong>Údržba:</strong> minimálna – rez rastlín, kontrola kotví
+                        </div>
+                        <div class="system-card__detail">
+                            <strong>Životnosť:</strong> konštrukcia 30+ rokov
+                        </div>
+                        <div class="system-card__detail">
+                            <strong>Rastliny:</strong> brečtan, zemolez, vistéria, pavinič, plamienok
+                        </div>
+                        <div class="system-card__detail">
+                            <strong>Certifikácie:</strong> BREEAM Biodiversity, LEED Sustainable Sites
+                        </div>
                     </div>
                 </div>
 
-                <!-- Miroslav Hanečák -->
-                <div class="team-card">
-                    <div class="team-card__image">
-                        <div class="team-card__placeholder"></div>
+                <!-- System 2: Modulárne systémy -->
+                <div class="system-card">
+                    <div class="system-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="6" y="6" width="16" height="16" stroke="currentColor" stroke-width="2"/>
+                            <rect x="26" y="6" width="16" height="16" stroke="currentColor" stroke-width="2"/>
+                            <rect x="6" y="26" width="16" height="16" stroke="currentColor" stroke-width="2"/>
+                            <rect x="26" y="26" width="16" height="16" stroke="currentColor" stroke-width="2"/>
+                        </svg>
                     </div>
-                    <h3 class="team-card__name">Ing. Miroslav Hanečák</h3>
-                    <p class="team-card__role">Projektový manažér</p>
-                    <p class="team-card__desc">
-                        Technická príprava, koordinácia inštalácie a stavebný dozor.
-                        Certifikáty v zváraní a elektrotechnike.
+                    <h3 class="system-card__name">Modulárne systémy</h3>
+                    <p class="system-card__subtitle">Living walls</p>
+                    <p class="system-card__desc">
+                        Moderné panely s integrovaným substrátom a závlahou prinášajú okamžitý vizuálny efekt.
+                        Ideálne pre reprezentatívny vzhľad budovy.
                     </p>
-                    <div class="team-card__badges">
-                        <span class="team-card__badge">Zváranie</span>
-                        <span class="team-card__badge">Elektrotechnika §22</span>
+                    <div class="system-card__details">
+                        <div class="system-card__detail">
+                            <strong>Údržba:</strong> pravidelný servis závlahy, výživa rastlín
+                        </div>
+                        <div class="system-card__detail">
+                            <strong>Životnosť:</strong> moduly 15-20 rokov, rastliny 5-10 rokov
+                        </div>
+                        <div class="system-card__detail">
+                            <strong>Rastliny:</strong> bergénia, konvalinka, levanduľa, rozchodník, paprade
+                        </div>
+                        <div class="system-card__detail">
+                            <strong>Certifikácie:</strong> LEED Water Efficiency, BREEAM Ecology
+                        </div>
                     </div>
                 </div>
 
-                <!-- Daniel Ďugel -->
-                <div class="team-card">
-                    <div class="team-card__image">
-                        <div class="team-card__placeholder"></div>
+                <!-- System 3: Hydroponické systémy -->
+                <div class="system-card">
+                    <div class="system-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 6L30 18H18L24 6Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 20H36V38C36 40 34 42 32 42H16C14 42 12 40 12 38V20Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M18 28H30M18 34H30" stroke="currentColor" stroke-width="2"/>
+                        </svg>
                     </div>
-                    <h3 class="team-card__name">Ing. Daniel Ďugel, PhD.</h3>
-                    <p class="team-card__role">Statik a akademický špecialista</p>
-                    <p class="team-card__desc">
-                        Statické výpočty a posúdenie nosných konštrukcií. Výskum v oblasti
-                        dynamiky stavieb na Žilinskej univerzite.
+                    <h3 class="system-card__name">Hydroponické systémy</h3>
+                    <p class="system-card__subtitle">Najpokročilejšie riešenie</p>
+                    <p class="system-card__desc">
+                        Technologicky najpokročilejšie riešenie. Rastliny rastú bez pôdy so automatickou
+                        závlahou a živinami. Stabilný rast a celoročný efekt.
                     </p>
-                    <div class="team-card__badges">
-                        <span class="team-card__badge">PhD. statika</span>
-                        <span class="team-card__badge">UNIZA</span>
+                    <div class="system-card__details">
+                        <div class="system-card__detail">
+                            <strong>Údržba:</strong> odborný servis – čerpadlá, filtre, živiny
+                        </div>
+                        <div class="system-card__detail">
+                            <strong>Životnosť:</strong> moduly 20+ rokov, technika 5-10 rokov
+                        </div>
+                        <div class="system-card__detail">
+                            <strong>Rastliny:</strong> heuchera, rozchodník, skalnice, materina dúška
+                        </div>
+                        <div class="system-card__detail">
+                            <strong>Certifikácie:</strong> LEED Energy & Atmosphere, BREEAM Health
+                        </div>
                     </div>
                 </div>
 
-                <!-- Dušan Tichý -->
-                <div class="team-card">
-                    <div class="team-card__image">
-                        <div class="team-card__placeholder"></div>
+                <!-- System 4: Hybridné riešenia -->
+                <div class="system-card">
+                    <div class="system-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 6V24L36 30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="24" cy="24" r="3" fill="currentColor"/>
+                        </svg>
                     </div>
-                    <h3 class="team-card__name">Ing. Dušan Tichý</h3>
-                    <p class="team-card__role">Autorizovaný statik</p>
-                    <p class="team-card__desc">
-                        Projektová dokumentácia, stavebné povolenia a praktické riešenia.
-                        Autorizácia SKSI pre pozemné stavby.
+                    <h3 class="system-card__name">Hybridné riešenia</h3>
+                    <p class="system-card__subtitle">Kombinácia výhod</p>
+                    <p class="system-card__desc">
+                        Kombinujú výhody popínavých a modulárnych systémov. Využívajú lacnejšie plochy
+                        s popínavými rastlinami a dopĺňajú ich modulárnymi prvkami.
                     </p>
-                    <div class="team-card__badges">
-                        <span class="team-card__badge">SKSI autorizácia</span>
-                        <span class="team-card__badge">Pozemné stavby</span>
+                    <div class="system-card__details">
+                        <div class="system-card__detail">
+                            <strong>Údržba:</strong> nižšia náročnosť než plne modulárny systém
+                        </div>
+                        <div class="system-card__detail">
+                            <strong>Životnosť:</strong> konštrukcia 30+ rokov
+                        </div>
+                        <div class="system-card__detail">
+                            <strong>Rastliny:</strong> kombinácia popínavých a trvaliek
+                        </div>
+                        <div class="system-card__detail">
+                            <strong>Certifikácie:</strong> flexibilné pre BREEAM aj LEED
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Darina Funtíková -->
-                <div class="team-card">
-                    <div class="team-card__image">
-                        <div class="team-card__placeholder"></div>
+    <!-- MANKI Team Section -->
+    <section class="manki-team">
+        <div class="manki-team__container">
+            <h2 class="manki-team__title">MANKI Tím</h2>
+            <p class="manki-team__intro">
+                Predstavujeme ľudí, ktorí nesú zodpovednosť za každý krok.
+                Za projektom stojí tím odborníkov na výškové práce, statiku, architektúru, záhradníctvo, substráty a závlahy.
+                Každú fázu vedie zodpovedný špecialista od návrhu po montáž a servis. Výsledkom je jasná zodpovednosť,
+                kontrola kvality a dlhodobo funkčné riešenie.
+            </p>
+
+            <!-- Ján Sabol -->
+            <div class="manki-member">
+                <div class="manki-member__image">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/jan-sabol.jpg" alt="Ing. Ján Sabol">
+                </div>
+                <div class="manki-member__content">
+                    <h3 class="manki-member__name">Ing. Ján Sabol</h3>
+                    <p class="manki-member__role">CEO a zakladateľ MANKI</p>
+
+                    <div class="manki-member__section">
+                        <h4>Stručná charakteristika</h4>
+                        <p>
+                            CEO a zakladateľ MANKI s vyše 10-ročnou praxou vo výškových prácach. Zameriava sa na náročné
+                            technické realizácie a údržbu objektov. Jeho prístup stojí na zodpovednosti, precíznom návrhu,
+                            kvalitnej realizácii a udržateľnosti.
+                        </p>
                     </div>
-                    <h3 class="team-card__name">Darina Funtíková</h3>
-                    <p class="team-card__role">Záhradníčka, POLYDAF s.r.o.</p>
-                    <p class="team-card__desc">
-                        Výber a výsadba rastlín, návrh a inštalácia závlahových systémov.
-                        Desaťročia skúseností so zelenými strechami.
-                    </p>
-                    <div class="team-card__badges">
-                        <span class="team-card__badge">Závlahové systémy</span>
-                        <span class="team-card__badge">Zelené strechy</span>
+
+                    <div class="manki-member__section">
+                        <h4>Úloha v projekte zelených fasád</h4>
+                        <p>
+                            Zastrešuje riadenie projektu od návrhu a komunikácie s investorom až po realizáciu a odovzdanie.
+                            Zlaďuje prácu statika, architekta, záhradníka a výškových pracovníkov do jedného funkčného celku.
+                            Zodpovedá za výber partnerov a nastavenie dlhodobého servisu.
+                        </p>
+                    </div>
+
+                    <div class="manki-member__section">
+                        <h4>Profesijné zázemie</h4>
+                        <ul class="manki-member__credentials">
+                            <li>Zakladateľ a CEO spoločnosti MANKI, s. r. o.</li>
+                            <li>Revízny technik OOPP pre práce vo výškach</li>
+                        </ul>
                     </div>
                 </div>
+            </div>
 
-                <!-- Michal Vavrík -->
-                <div class="team-card">
-                    <div class="team-card__image">
-                        <div class="team-card__placeholder"></div>
+            <!-- Miroslav Hanečák -->
+            <div class="manki-member">
+                <div class="manki-member__image">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/miroslav-hanecak.jpg" alt="Ing. Miroslav Hanečák">
+                </div>
+                <div class="manki-member__content">
+                    <h3 class="manki-member__name">Ing. Miroslav Hanečák</h3>
+                    <p class="manki-member__role">CTO - Projektový manažér</p>
+
+                    <div class="manki-member__section">
+                        <h4>Stručná charakteristika</h4>
+                        <p>
+                            CTO MANKI so špecializáciou na zváranie a elektrotechniku. Držiteľ štátnych skúšok zo zvárania
+                            a osvedčenia samostatného elektrotechnika podľa § 22 vyhlášky 508/2009 Z. z. Zameriava sa
+                            na technickú prípravu, kontrolu realizácie a bezpečný priebeh montážnych prác.
+                        </p>
                     </div>
-                    <h3 class="team-card__name">Ing. Michal Vavrík</h3>
-                    <p class="team-card__role">Dodávateľ substrátov</p>
-                    <p class="team-card__desc">
-                        Špecializácia na organické substráty pre vertikálne výsadby.
-                        Certifikovaný výrobca kompostu, Kompostujme.sk.
-                    </p>
-                    <div class="team-card__badges">
-                        <span class="team-card__badge">Organické substráty</span>
-                        <span class="team-card__badge">Cirkulárna ekonomika</span>
+
+                    <div class="manki-member__section">
+                        <h4>Úloha v projekte zelených fasád</h4>
+                        <p>
+                            Zodpovedá za technickú prípravu, koordináciu montáže, kontrolu kvality a dohľad nad realizáciou.
+                            Prepája výstupy statika, architekta a záhradníka, aby práce prebiehali efektívne, bezpečne
+                            a v súlade s dokumentáciou, čo zaručuje kvalitné prevedenie a dlhodobú funkčnosť.
+                        </p>
+                    </div>
+
+                    <div class="manki-member__section">
+                        <h4>Profesijné zázemie</h4>
+                        <ul class="manki-member__credentials">
+                            <li>CTO spoločnosti MANKI, s. r. o.</li>
+                            <li>Štátne skúšky na zváranie (certifikované)</li>
+                            <li>Osvedčenie samostatného elektrotechnika podľa § 22 vyhlášky 508/2009 Z. z.</li>
+                        </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Matej Jasenka -->
-                <div class="team-card">
-                    <div class="team-card__image">
-                        <div class="team-card__placeholder"></div>
+    <!-- Partner Experts Section -->
+    <section class="expert-team">
+        <div class="expert-team__container">
+            <h2 class="expert-team__title">Partneri a odborníci</h2>
+            <p class="expert-team__subtitle">
+                S MANKI spolupracujú špičkoví špecialisti v oblasti statiky, záhradnej architektúry,
+                závlahových systémov a organických substrátov. Zabezpečujú kvalitu a dlhodobú funkčnosť
+                každého projektu zelených fasád.
+            </p>
+
+            <!-- Daniel Ďugel -->
+            <div class="expert-member">
+                <div class="expert-member__image">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/daniel-dugel.jpg" alt="Ing. Daniel Ďugel, PhD.">
+                </div>
+                <div class="expert-member__content">
+                    <h3 class="expert-member__name">Ing. Daniel Ďugel, PhD.</h3>
+                    <p class="expert-member__role">Statik a akademický odborník na nosné konštrukcie</p>
+
+                    <div class="expert-member__section">
+                        <h4>Stručná charakteristika</h4>
+                        <p>
+                            Statik s PhD v odbore teória a konštrukcie inžinierskych stavieb (dynamika stavieb).
+                            Zameriava sa na analýzu nosných systémov, správanie materiálov a návrh bezpečných detailov,
+                            ktoré overuje aj experimentálnymi meraniami stability oceľových konštrukcií.
+                        </p>
                     </div>
-                    <h3 class="team-card__name">Ing. Matej Jasenka, PhD.</h3>
-                    <p class="team-card__role">Krajinný architekt</p>
-                    <p class="team-card__desc">
-                        Architektonicko-priestorový návrh a rastlinná kompozícia.
-                        Autorizovaný architekt Slovenskej komory architektov.
-                    </p>
-                    <div class="team-card__badges">
-                        <span class="team-card__badge">SKA autorizácia</span>
-                        <span class="team-card__badge">Udržateľná architektúra</span>
+
+                    <div class="expert-member__section">
+                        <h4>Úloha v projekte zelených fasád</h4>
+                        <p>
+                            V spolupráci s MANKI spracúva statické posudky a výpočty nosných častí zelených fasád.
+                            Overuje dimenzovanie kotvenia a konštrukcií na zaťaženie vegetáciou, vetrom a klimatickými vplyvmi.
+                            Jeho výstupy tvoria pevný základ bezpečného návrhu aj realizácie.
+                        </p>
+                    </div>
+
+                    <div class="expert-member__section">
+                        <h4>Profesijné zázemie</h4>
+                        <ul class="expert-member__credentials">
+                            <li>ProProjekt, spol. s r. o.</li>
+                            <li>UNIZA – Stavebná fakulta, Katedra stavebnej mechaniky</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Darina Funtíková -->
+            <div class="expert-member">
+                <div class="expert-member__image">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/darina-funtikova.jpg" alt="Darina Funtíková">
+                </div>
+                <div class="expert-member__content">
+                    <h3 class="expert-member__name">Darina Funtíková</h3>
+                    <p class="expert-member__role">Záhradníčka a špecialistka na závlahové systémy – POLYDAF, s. r. o.</p>
+
+                    <div class="expert-member__section">
+                        <h4>Stručná charakteristika</h4>
+                        <p>
+                            Záhradníčka s dlhoročnou praxou v návrhoch, realizácii a údržbe okrasných aj úžitkových výsadieb.
+                            V POLYDAF, s. r. o. sa so svojím tímom špecializuje na záhrady, výsadbu drevín, zakladanie trávnikov,
+                            úpravy terénu, zelené strechy a automatické závlahy.
+                        </p>
+                    </div>
+
+                    <div class="expert-member__section">
+                        <h4>Úloha v projekte zelených fasád</h4>
+                        <p>
+                            V spolupráci s MANKI zabezpečuje výber rastlín, návrh a montáž závlahových systémov. Jej tím dohliada
+                            na kondíciu vegetácie počas roka a riešenia prispôsobuje orientácii budovy, typu systému a klíme.
+                            Vďaka skúsenostiam vytvára fasády, ktoré sú estetické, funkčné a trvácne.
+                        </p>
+                    </div>
+
+                    <div class="expert-member__section">
+                        <h4>Profesijné zázemie</h4>
+                        <ul class="expert-member__credentials">
+                            <li>POLYDAF, s. r. o. – realizácia a údržba zelene, automatické závlahy, zelené strechy</li>
+                            <li>Dlhoročné skúsenosti s projektmi pre súkromných aj verejných investorov</li>
+                            <li>Spolupráca s architektmi, developermi a mestskými inštitúciami</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Michal Vavrík -->
+            <div class="expert-member">
+                <div class="expert-member__image">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/michal-vavrik.jpg" alt="Ing. Michal Vavrík">
+                </div>
+                <div class="expert-member__content">
+                    <h3 class="expert-member__name">Ing. Michal Vavrík</h3>
+                    <p class="expert-member__role">Dodávateľ pestovateľských substrátov a kompostov</p>
+
+                    <div class="expert-member__section">
+                        <h4>Stručná charakteristika</h4>
+                        <p>
+                            Odborník na organické substráty, komposty a prírodné hnojivá. Vyvíja a vyrába pestovateľské zmesi
+                            zamerané na kvalitu, udržateľnosť a princípy obehového hospodárstva. Substráty skladá tak, aby mali
+                            stabilnú štruktúru a vyvážený pomer živín, vzdušnosti a vlhkosti.
+                        </p>
+                    </div>
+
+                    <div class="expert-member__section">
+                        <h4>Úloha v projekte zelených fasád</h4>
+                        <p>
+                            V spolupráci s MANKI zabezpečuje výber a dodávku substrátov pre vertikálne výsadby. So záhradným
+                            architektom a realizačným tímom prispôsobuje zloženie substrátu potrebám rastlín a typu systému.
+                            Jeho riešenia poskytujú fasádam zdravý základ a dlhodobú vitalitu porastu.
+                        </p>
+                    </div>
+
+                    <div class="expert-member__section">
+                        <h4>Profesijné zázemie</h4>
+                        <ul class="expert-member__credentials">
+                            <li>Kompostujme.sk – výrobca a dodávateľ certifikovaných kompostov a substrátov</li>
+                            <li>Dlhodobá spolupráca s pestovateľmi, záhradnými centrami a realizačnými firmami</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Matej Jasenka -->
+            <div class="expert-member">
+                <div class="expert-member__image">
+                    <div class="expert-member__placeholder">
+                        <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+                            <rect width="200" height="200" fill="#0D3B2E"/>
+                            <circle cx="100" cy="80" r="30" fill="#D4E8E1"/>
+                            <path d="M50 180 Q50 120 100 120 Q150 120 150 180" fill="#D4E8E1"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="expert-member__content">
+                    <h3 class="expert-member__name">Ing. Matej Jasenka, PhD.</h3>
+                    <p class="expert-member__role">Autorizovaný krajinný a záhradný architekt</p>
+
+                    <div class="expert-member__section">
+                        <h4>Stručná charakteristika</h4>
+                        <p>
+                            Autorizovaný krajinný architekt s dlhoročnou praxou v navrhovaní verejných aj súkromných priestorov.
+                            Spája dizajn s funkčnosťou a dôrazom na udržateľnosť. Venuje sa modrozeleným infraštruktúram,
+                            sadovým úpravám a environmentálnym konzultáciám.
+                        </p>
+                    </div>
+
+                    <div class="expert-member__section">
+                        <h4>Úloha v projekte zelených fasád</h4>
+                        <p>
+                            V spolupráci s Manki navrhuje architektonické riešenie a kompozíciu rastlín. Výber vegetácie
+                            prispôsobuje orientácii budovy, mikroklíme a typu systému. Navrhuje riešenia, ktoré sú technicky
+                            premyslené, vizuálne atraktívne a ekologicky vyvážené.
+                        </p>
+                    </div>
+
+                    <div class="expert-member__section">
+                        <h4>Profesijné zázemie</h4>
+                        <ul class="expert-member__credentials">
+                            <li>Autorizovaný krajinný architekt (SKA)</li>
+                            <li>Návrh verejných priestranstiev, parkov a zelenej infraštruktúry</li>
+                            <li>Spolupráca s architektmi, developermi, mestami a inštitúciami</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -289,7 +550,7 @@ get_header();
                 <div class="process__step">
                     <div class="process__number">2</div>
                     <h3 class="process__step-title">Návrh a vizualizácia</h3>
-                    <div class="process__time">5-7 dní | 500-1500 €</div>
+                    <div class="process__time">5-7 dní | Individuálna cena</div>
                     <p class="process__desc">Výber systému, dizajn, 3D vizualizácia, výber rastlín</p>
                 </div>
                 <div class="process__step">
