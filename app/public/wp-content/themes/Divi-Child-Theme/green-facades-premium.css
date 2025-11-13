@@ -704,7 +704,7 @@
 
 .systems {
     padding: 100px 0;
-    background: var(--premium-gray-light);
+    background: var(--premium-white);
 }
 
 .systems__container {
@@ -723,98 +723,147 @@
 
 .systems__subtitle {
     font-size: 18px;
-    color: var(--premium-gray);
+    color: var(--premium-text);
     text-align: center;
-    max-width: 800px;
-    margin: 0 auto 60px;
+    max-width: 900px;
+    margin: 0 auto 80px;
     line-height: 1.7;
 }
 
-.systems__grid {
+/* Alternating Layout for System Items */
+.system-item {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    grid-template-columns: 500px 1fr;
+    gap: 60px;
+    margin-bottom: 100px;
+    align-items: center;
 }
 
-.system-card {
-    background: var(--premium-white);
+.system-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Image Left Layout */
+.system-item--left {
+    grid-template-areas: "image content";
+}
+
+.system-item--left .system-item__image {
+    grid-area: image;
+}
+
+.system-item--left .system-item__content {
+    grid-area: content;
+}
+
+/* Image Right Layout */
+.system-item--right {
+    grid-template-areas: "content image";
+}
+
+.system-item--right .system-item__image {
+    grid-area: image;
+}
+
+.system-item--right .system-item__content {
+    grid-area: content;
+}
+
+.system-item__image {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%;
     border-radius: 12px;
-    padding: 40px 30px;
+    overflow: hidden;
     box-shadow: var(--premium-shadow);
     transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
 }
 
-.system-card:hover {
-    transform: translateY(-5px);
+.system-item:hover .system-item__image {
     box-shadow: var(--premium-shadow-hover);
+    transform: scale(1.02);
 }
 
-.system-card__icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 24px;
-    color: var(--premium-primary);
-}
-
-.system-card__icon svg {
+.system-item__image img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
-.system-card__name {
-    font-size: 22px;
+.system-item__content {
+    padding: 20px 0;
+}
+
+.system-item__name {
+    font-size: 32px;
     font-weight: 700;
     color: var(--premium-primary);
     margin-bottom: 8px;
 }
 
-.system-card__subtitle {
-    font-size: 14px;
-    color: var(--premium-gray);
-    margin-bottom: 16px;
+.system-item__subtitle {
+    font-size: 16px;
+    color: var(--premium-secondary);
+    font-weight: 600;
+    margin-bottom: 20px;
     font-style: italic;
 }
 
-.system-card__desc {
+.system-item__desc {
+    font-size: 17px;
+    color: var(--premium-text);
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+.system-item__details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.system-item__detail {
     font-size: 15px;
     color: var(--premium-text);
     line-height: 1.6;
-    margin-bottom: 24px;
-}
-
-.system-card__details {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: auto;
-}
-
-.system-card__detail {
-    font-size: 14px;
-    color: var(--premium-text);
-    line-height: 1.5;
-    padding-left: 20px;
+    padding-left: 24px;
     position: relative;
 }
 
-.system-card__detail::before {
-    content: "•";
+.system-item__detail::before {
+    content: "✓";
     position: absolute;
     left: 0;
     color: var(--premium-secondary);
     font-weight: bold;
+    font-size: 16px;
 }
 
-.system-card__detail strong {
+.system-item__detail strong {
     color: var(--premium-primary);
     font-weight: 600;
 }
 
 @media (max-width: 1024px) {
-    .systems__grid {
-        grid-template-columns: repeat(2, 1fr);
+    .system-item {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-bottom: 80px;
+    }
+
+    .system-item--left,
+    .system-item--right {
+        grid-template-areas:
+            "image"
+            "content";
+    }
+
+    .system-item__image {
+        max-width: 500px;
+        margin: 0 auto;
     }
 }
 
@@ -827,10 +876,30 @@
         font-size: 32px;
     }
 
-    .systems__grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .system-item {
+        margin-bottom: 60px;
     }
+
+    .system-item__name {
+        font-size: 26px;
+    }
+
+    .system-item__desc {
+        font-size: 16px;
+    }
+}
+
+/* Hero Image Styles */
+.hero__image {
+    flex: 1;
+    position: relative;
+}
+
+.hero__image-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 /* ==========================================================================

@@ -29,7 +29,7 @@ get_header();
                 </div>
             </div>
             <div class="hero__image">
-                <div class="hero__image-placeholder"></div>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hero-green-facade.jpg" alt="Zelené fasády" class="hero__image-img">
             </div>
         </div>
     </section>
@@ -152,129 +152,134 @@ get_header();
                 Od jednoduchých popínavých systémov až po technologicky pokročilé hydroponické riešenia.
             </p>
 
-            <div class="systems__grid">
-                <!-- System 1: Popínavé systémy -->
-                <div class="system-card">
-                    <div class="system-card__icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <path d="M24 4C13.5 4 5 12.5 5 23C5 33.5 13.5 42 24 42C34.5 42 43 33.5 43 23C43 12.5 34.5 4 24 4Z" stroke="currentColor" stroke-width="2"/>
-                            <path d="M24 12V36M16 20L24 28L32 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <h3 class="system-card__name">Popínavé systémy</h3>
-                    <p class="system-card__subtitle">Green façades</p>
-                    <p class="system-card__desc">
-                        Najjednoduchší a najekonomickejší variant. Popínavé rastliny prirodzene obrastajú
-                        lanové alebo mrežové konštrukcie. Fasáda postupne zazelenie a rokmi zosilňuje svoj efekt.
+            <!-- System 1: Popínavé systémy (Image Left) -->
+            <div class="system-item system-item--left">
+                <div class="system-item__image">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/system-popinave.jpg" alt="Popínavé systémy">
+                </div>
+                <div class="system-item__content">
+                    <h3 class="system-item__name">Popínavé systémy</h3>
+                    <p class="system-item__subtitle">Green façades</p>
+                    <p class="system-item__desc">
+                        Najjednoduchší a najekonomickejší variant zelenej fasády. Popínavé rastliny sú vysadené
+                        pri budove alebo v mobilných nádobách a postupne obrastajú lanové alebo mrežové konštrukcie.
+                        Fasáda tak prirodzene zazelenie a rokmi zosilňuje svoj efekt.
                     </p>
-                    <div class="system-card__details">
-                        <div class="system-card__detail">
-                            <strong>Údržba:</strong> minimálna – rez rastlín, kontrola kotví
+                    <div class="system-item__details">
+                        <div class="system-item__detail">
+                            <strong>Údržba a životnosť:</strong> minimálna, pozostáva najmä z rezu rastlín a kontroly
+                            kotviacich prvkov; nerezová konštrukcia AISI 316 má životnosť 30+ rokov.
                         </div>
-                        <div class="system-card__detail">
-                            <strong>Životnosť:</strong> konštrukcia 30+ rokov
+                        <div class="system-item__detail">
+                            <strong>Odporúčané rastliny:</strong> brečtan popínavý, zemolez, vistéria, pavinič trojlaločný, plamienok
                         </div>
-                        <div class="system-card__detail">
-                            <strong>Rastliny:</strong> brečtan, zemolez, vistéria, pavinič, plamienok
+                        <div class="system-item__detail">
+                            <strong>Certifikácie:</strong> body v rámci BREEAM – Biodiversity a LEED – Sustainable Sites
                         </div>
-                        <div class="system-card__detail">
-                            <strong>Certifikácie:</strong> BREEAM Biodiversity, LEED Sustainable Sites
+                        <div class="system-item__detail">
+                            <strong>ROI:</strong> nízke počiatočné náklady, úspora energie v lete (znižovanie teploty
+                            fasády až o 10–15 °C)
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- System 2: Modulárne systémy -->
-                <div class="system-card">
-                    <div class="system-card__icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <rect x="6" y="6" width="16" height="16" stroke="currentColor" stroke-width="2"/>
-                            <rect x="26" y="6" width="16" height="16" stroke="currentColor" stroke-width="2"/>
-                            <rect x="6" y="26" width="16" height="16" stroke="currentColor" stroke-width="2"/>
-                            <rect x="26" y="26" width="16" height="16" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h3 class="system-card__name">Modulárne systémy</h3>
-                    <p class="system-card__subtitle">Living walls</p>
-                    <p class="system-card__desc">
-                        Moderné panely s integrovaným substrátom a závlahou prinášajú okamžitý vizuálny efekt.
-                        Ideálne pre reprezentatívny vzhľad budovy.
+            <!-- System 2: Modulárne systémy (Image Right) -->
+            <div class="system-item system-item--right">
+                <div class="system-item__content">
+                    <h3 class="system-item__name">Modulárne systémy</h3>
+                    <p class="system-item__subtitle">Living walls</p>
+                    <p class="system-item__desc">
+                        Moderné panely alebo kazety s integrovaným substrátom a závlahou prinášajú okamžitý vizuálny efekt.
+                        Rastliny možno kombinovať do rôznych vzorov, čím sa dosiahne hustý a pestrý porast. Tento systém
+                        je ideálny, ak chcete dosiahnuť reprezentatívny vzhľad budovy.
                     </p>
-                    <div class="system-card__details">
-                        <div class="system-card__detail">
-                            <strong>Údržba:</strong> pravidelný servis závlahy, výživa rastlín
+                    <div class="system-item__details">
+                        <div class="system-item__detail">
+                            <strong>Údržba a životnosť:</strong> vyžadujú pravidelný servis závlahového systému, doplnenie
+                            substrátu a výživu rastlín; životnosť modulov 15–20 rokov a rastlín 5-10 rokov.
                         </div>
-                        <div class="system-card__detail">
-                            <strong>Životnosť:</strong> moduly 15-20 rokov, rastliny 5-10 rokov
+                        <div class="system-item__detail">
+                            <strong>Odporúčané rastliny:</strong> bergénia, konvalinka, kostrava, levanduľa, rozchodník,
+                            paprade, okrasné trávy
                         </div>
-                        <div class="system-card__detail">
-                            <strong>Rastliny:</strong> bergénia, konvalinka, levanduľa, rozchodník, paprade
+                        <div class="system-item__detail">
+                            <strong>Certifikácie:</strong> prínos pre LEED – Water Efficiency, Heat Island Reduction,
+                            BREEAM – Ecology and Pollution
                         </div>
-                        <div class="system-card__detail">
-                            <strong>Certifikácie:</strong> LEED Water Efficiency, BREEAM Ecology
+                        <div class="system-item__detail">
+                            <strong>ROI:</strong> vyššie investičné náklady, no vysoká návratnosť vďaka atraktivite pre
+                            nájomcov, zlepšeniu komfortu a zvýšeniu hodnoty budovy
                         </div>
                     </div>
                 </div>
+                <div class="system-item__image">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/system-modularne.jpg" alt="Modulárne systémy">
+                </div>
+            </div>
 
-                <!-- System 3: Hydroponické systémy -->
-                <div class="system-card">
-                    <div class="system-card__icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <path d="M24 6L30 18H18L24 6Z" stroke="currentColor" stroke-width="2"/>
-                            <path d="M12 20H36V38C36 40 34 42 32 42H16C14 42 12 40 12 38V20Z" stroke="currentColor" stroke-width="2"/>
-                            <path d="M18 28H30M18 34H30" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h3 class="system-card__name">Hydroponické systémy</h3>
-                    <p class="system-card__subtitle">Najpokročilejšie riešenie</p>
-                    <p class="system-card__desc">
-                        Technologicky najpokročilejšie riešenie. Rastliny rastú bez pôdy so automatickou
-                        závlahou a živinami. Stabilný rast a celoročný efekt.
+            <!-- System 3: Hydroponické systémy (Image Left) -->
+            <div class="system-item system-item--left">
+                <div class="system-item__image">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/system-hydroponicke.jpg" alt="Hydroponické systémy">
+                </div>
+                <div class="system-item__content">
+                    <h3 class="system-item__name">Hydroponické systémy</h3>
+                    <p class="system-item__subtitle">Najpokročilejšie riešenie</p>
+                    <p class="system-item__desc">
+                        Technologicky najpokročilejšie riešenie. Rastliny rastú bez pôdy v špeciálnom médiu, sú zásobované
+                        automatickou závlahou s pridanými živinami. Vďaka presnej kontrole podmienok je zabezpečený stabilný
+                        rast a celoročný efekt.
                     </p>
-                    <div class="system-card__details">
-                        <div class="system-card__detail">
-                            <strong>Údržba:</strong> odborný servis – čerpadlá, filtre, živiny
+                    <div class="system-item__details">
+                        <div class="system-item__detail">
+                            <strong>Údržba a životnosť:</strong> vyžadujú odborný servis – kontrolu čerpadiel, filtra
+                            a živného roztoku. Životnosť modulov 20+ rokov, čerpadlá a riadiace jednotky cca 5–10 rokov.
                         </div>
-                        <div class="system-card__detail">
-                            <strong>Životnosť:</strong> moduly 20+ rokov, technika 5-10 rokov
+                        <div class="system-item__detail">
+                            <strong>Odporúčané rastliny:</strong> heuchera, rozchodník, skalnice, materina dúška, carex
                         </div>
-                        <div class="system-card__detail">
-                            <strong>Rastliny:</strong> heuchera, rozchodník, skalnice, materina dúška
+                        <div class="system-item__detail">
+                            <strong>Certifikácie:</strong> významné body pre LEED – Energy & Atmosphere, Indoor Environmental
+                            Quality, BREEAM – Health and Wellbeing
                         </div>
-                        <div class="system-card__detail">
-                            <strong>Certifikácie:</strong> LEED Energy & Atmosphere, BREEAM Health
+                        <div class="system-item__detail">
+                            <strong>ROI:</strong> ideálne pre veľké projekty – úspory na chladení, najmä pri južných fasádach,
+                            zlepšenie kvality vzduchu, vyššia atraktivita budovy
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- System 4: Hybridné riešenia -->
-                <div class="system-card">
-                    <div class="system-card__icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
-                            <path d="M24 6V24L36 30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <circle cx="24" cy="24" r="3" fill="currentColor"/>
-                        </svg>
-                    </div>
-                    <h3 class="system-card__name">Hybridné riešenia</h3>
-                    <p class="system-card__subtitle">Kombinácia výhod</p>
-                    <p class="system-card__desc">
-                        Kombinujú výhody popínavých a modulárnych systémov. Využívajú lacnejšie plochy
-                        s popínavými rastlinami a dopĺňajú ich modulárnymi prvkami.
+            <!-- System 4: Hybridné riešenia (Image Right) -->
+            <div class="system-item system-item--right">
+                <div class="system-item__content">
+                    <h3 class="system-item__name">Hybridné riešenia</h3>
+                    <p class="system-item__subtitle">Kombinácia výhod</p>
+                    <p class="system-item__desc">
+                        Kombinujú výhody popínavých a modulárnych systémov. Využívajú lacnejšie plochy s popínavými rastlinami
+                        a dopĺňajú ich modulárnymi alebo profilovými prvkami, čím sa dosiahne bohatý efekt pri nižších nákladoch.
                     </p>
-                    <div class="system-card__details">
-                        <div class="system-card__detail">
-                            <strong>Údržba:</strong> nižšia náročnosť než plne modulárny systém
+                    <div class="system-item__details">
+                        <div class="system-item__detail">
+                            <strong>Údržba a životnosť:</strong> nižšia náročnosť než pri plne modulárnom systéme,
+                            životnosť konštrukcie viac ako 30 rokov
                         </div>
-                        <div class="system-card__detail">
-                            <strong>Životnosť:</strong> konštrukcia 30+ rokov
+                        <div class="system-item__detail">
+                            <strong>Odporúčané rastliny:</strong> kombinácia popínavých a trvaliek či okrasných tráv
                         </div>
-                        <div class="system-card__detail">
-                            <strong>Rastliny:</strong> kombinácia popínavých a trvaliek
+                        <div class="system-item__detail">
+                            <strong>Certifikácie:</strong> flexibilné riešenie, ktoré umožňuje plniť požiadavky BREEAM
+                            aj LEED podľa zvoleného pomeru prvkov
                         </div>
-                        <div class="system-card__detail">
-                            <strong>Certifikácie:</strong> flexibilné pre BREEAM aj LEED
+                        <div class="system-item__detail">
+                            <strong>ROI:</strong> ideálny kompromis medzi cenou a dizajnom, vhodný pre developerské
+                            a komerčné projekty s dôrazom na udržateľnosť
                         </div>
                     </div>
+                </div>
+                <div class="system-item__image">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/system-hybridne.jpg" alt="Hybridné riešenia">
                 </div>
             </div>
         </div>
