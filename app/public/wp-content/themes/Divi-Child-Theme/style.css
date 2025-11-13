@@ -971,10 +971,12 @@ footer,
     width: 100% !important;
 }
 
+/* FIX: Changed from 100vw to 100% to prevent horizontal scroll
+   100vw includes scrollbar width, causing overflow on desktop */
 .green-facades-hero {
     margin: 0 !important;
-    width: 100vw !important;
-    margin-left: calc(-50vw + 50%) !important;
+    width: 100% !important;
+    margin-left: 0 !important;
 }
 
 .green-facades-values,
@@ -985,8 +987,8 @@ footer,
 .green-facades-calculator,
 .green-facades-cta,
 .green-facades-why {
-    width: 100vw !important;
-    margin-left: calc(-50vw + 50%) !important;
+    width: 100% !important;
+    margin-left: 0 !important;
 }
 
 /* Keep inner containers reasonable */
